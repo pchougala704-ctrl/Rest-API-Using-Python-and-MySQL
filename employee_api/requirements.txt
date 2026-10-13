@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────────────────────
+# requirements.txt
+# ─────────────────────────────────────────────────────────────
+# This file lists every third-party package this project needs.
+# Install all of them with one command:
+#   pip install -r requirements.txt
+#
+# Package explanations
+# ────────────────────
+# fastapi            → The web framework. It lets you define URL
+#                      routes (endpoints) using plain Python functions.
+#
+# uvicorn            → The server that actually RUNS the FastAPI app.
+#                      Think of it like Apache/Nginx but for Python.
+#
+# mysql-connector-python
+#                    → The official MySQL driver for Python.
+#                      It lets Python talk to a MySQL database.
+#
+# python-dotenv      → Reads key=value pairs from a .env file and
+#                      loads them into os.environ so secrets never
+#                      live inside Python source code.
+#
+# python-multipart   → Required by FastAPI to accept file uploads
+#                      (multipart/form-data HTTP requests).
+#
+# aiofiles           → Lets FastAPI read/write files without blocking
+#                      the server while waiting for disk I/O.
+# ─────────────────────────────────────────────────────────────
+
+fastapi==0.111.0
+uvicorn==0.29.0
+mysql-connector-python==8.4.0
+python-dotenv==1.0.1
+python-multipart==0.0.9
+aiofiles==23.2.1
